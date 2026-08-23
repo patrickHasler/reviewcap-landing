@@ -53,7 +53,7 @@
   <header style="padding:clamp(36px,5vw,60px) 22px clamp(20px,3vw,28px);background:#fff;">
     <div style="max-width:760px;margin:0 auto;">
       <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,4vw,46px);line-height:1.08;letter-spacing:-0.035em;color:#11212E;margin:0 0 14px;">Privacy Policy</h1>
-      <p style="font-size:16px;line-height:1.6;color:#7A8893;margin:0;font-weight:600;">Last updated: 22 July 2026</p>
+      <p style="font-size:16px;line-height:1.6;color:#7A8893;margin:0;font-weight:600;">Last updated: 23 August 2026</p>
     </div>
   </header>
 
@@ -140,17 +140,35 @@
               <td>Shop profile, subscription and usage records</td>
               <td>Canada / USA</td>
             </tr>
+            <tr>
+              <td><strong>Vercel</strong></td>
+              <td>Hosts this website (reviewcap.ai) and provides the visitor statistics described in section 6. Not involved in the Shopify app itself.</td>
+              <td>Website requests, and the aggregated analytics data points listed in section 6</td>
+              <td>USA</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <p>We do not use advertising networks, analytics platforms or customer-tracking services. There is no Google Analytics, no Meta pixel and no comparable tool in the app, in the storefront widget or on this website.</p>
+      <p>We do not use advertising networks or customer-tracking services. There is no Google Analytics, no Meta pixel and no comparable tool anywhere. The Shopify app and the storefront widget contain no analytics of any kind. This website measures aggregate visitor numbers only, as described in section 6.</p>
 
       <h3>International transfers</h3>
       <p>The providers above are based outside the European Economic Area, primarily in the United States. Transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU–US Data Privacy Framework, together with the data processing terms of each provider.</p>
 
-      <h2>6. Cookies and tracking</h2>
+      <h2>6. Cookies, tracking and website statistics</h2>
       <p>The <strong>storefront widget</strong> that displays summaries on your product pages sets <strong>no cookies</strong> and uses no local storage, no browser fingerprinting and no analytics. It does not track shoppers.</p>
-      <p>The <strong>Reviewcap admin app</strong> inside your Shopify admin uses a session cookie that is strictly necessary to keep you signed in. This website uses no cookies. Fonts on this site are loaded from Google Fonts, which means your browser contacts Google's servers to fetch them.</p>
+      <p>The <strong>Reviewcap admin app</strong> inside your Shopify admin uses a session cookie that is strictly necessary to keep you signed in.</p>
+
+      <h3>Visitor statistics on this website</h3>
+      <p>On this marketing website (reviewcap.ai) we use <strong>Vercel Web Analytics</strong> to see how many people visit and which pages they read. It is a privacy-focused, <strong>cookieless</strong> tool: it sets no cookies, writes nothing to local storage, and does not follow you to other websites.</p>
+      <p>Instead of a persistent identifier, a visit is attributed using a hash derived from the incoming request, which is <strong>automatically discarded after 24 hours</strong>. The following is recorded per page view:</p>
+      <ul>
+        <li>Timestamp and the page URL, plus any query parameters after filtering</li>
+        <li>The referring website, if any</li>
+        <li>Approximate location derived from the request — country, region and city, <strong>not</strong> a stored IP address</li>
+        <li>Device type, operating system and browser, each with version</li>
+      </ul>
+      <p>The result is aggregate statistics. It does not identify you, is not combined with any other data we hold, and is not used for advertising or profiling. The legal basis is our legitimate interest in understanding how the site is used (Art. 6(1)(f) GDPR). Because no cookies are set and no personal identifiers are stored, we do not ask for consent for these statistics; you can still object at any time using the contact address in section 11.</p>
+      <p>Fonts on this site are loaded from Google Fonts, which means your browser contacts Google's servers to fetch them.</p>
 
       <h2>7. How long we keep data, and what happens when you uninstall</h2>
       <p>We keep shop, product, review and summary data for as long as the app remains installed, because the service cannot function without it.</p>
@@ -208,6 +226,12 @@
   </footer>
 
 </div>
+
+<!-- Vercel Web Analytics — cookieless, aggregated page views. Described in section 5 above. -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 
 </body>
 </html>
