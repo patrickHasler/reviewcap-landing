@@ -142,32 +142,40 @@
             </tr>
             <tr>
               <td><strong>Vercel</strong></td>
-              <td>Hosts this website (reviewcap.ai) and provides the visitor statistics described in section 6. Not involved in the Shopify app itself.</td>
-              <td>Website requests, and the aggregated analytics data points listed in section 6</td>
+              <td>Hosts this website (reviewcap.ai). Not involved in the Shopify app itself.</td>
+              <td>Website requests</td>
               <td>USA</td>
+            </tr>
+            <tr>
+              <td><strong>Umami</strong></td>
+              <td>Provides the visitor statistics for this website described in section 6. Not involved in the Shopify app or the storefront widget.</td>
+              <td>The aggregated, cookieless data points listed in section 6</td>
+              <td>EU (Germany)</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p>We do not use advertising networks or customer-tracking services. There is no Google Analytics, no Meta pixel and no comparable tool anywhere. The Shopify app and the storefront widget contain no analytics of any kind. This website measures aggregate visitor numbers only, as described in section 6.</p>
+      <p>We do not use advertising networks or customer-tracking services. There is no Google Analytics, no Meta pixel and no comparable tool anywhere. The Shopify app and the storefront widget contain no analytics of any kind. This website measures aggregate visitor statistics only, as described in section 6.</p>
 
       <h3>International transfers</h3>
-      <p>The providers above are based outside the European Economic Area, primarily in the United States. Transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU–US Data Privacy Framework, together with the data processing terms of each provider.</p>
+      <p>Website statistics stay in the European Union: Umami is used in its German hosting region. The remaining providers above are based outside the European Economic Area, primarily in the United States. Those transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU–US Data Privacy Framework, together with the data processing terms of each provider.</p>
 
       <h2>6. Cookies, tracking and website statistics</h2>
       <p>The <strong>storefront widget</strong> that displays summaries on your product pages sets <strong>no cookies</strong> and uses no local storage, no browser fingerprinting and no analytics. It does not track shoppers.</p>
       <p>The <strong>Reviewcap admin app</strong> inside your Shopify admin uses a session cookie that is strictly necessary to keep you signed in.</p>
 
       <h3>Visitor statistics on this website</h3>
-      <p>On this marketing website (reviewcap.ai) we use <strong>Vercel Web Analytics</strong> to see how many people visit and which pages they read. It is a privacy-focused, <strong>cookieless</strong> tool: it sets no cookies, writes nothing to local storage, and does not follow you to other websites.</p>
-      <p>Instead of a persistent identifier, a visit is attributed using a hash derived from the incoming request, which is <strong>automatically discarded after 24 hours</strong>. The following is recorded per page view:</p>
+      <p>On this marketing website (reviewcap.ai) we use <strong>Umami</strong> to see how many people visit, which pages they read, and which buttons they click. Umami is a privacy-focused, <strong>cookieless</strong> analytics tool: it sets no cookies, writes nothing to local storage, and does not follow you to other websites. We use its <strong>European hosting region, so this data is stored in Germany</strong> and does not leave the EU.</p>
+      <p>No persistent identifier is created and no IP address is stored. The following is recorded:</p>
       <ul>
-        <li>Timestamp and the page URL, plus any query parameters after filtering</li>
+        <li>Timestamp and the page URL, plus the page title</li>
         <li>The referring website, if any</li>
-        <li>Approximate location derived from the request — country, region and city, <strong>not</strong> a stored IP address</li>
-        <li>Device type, operating system and browser, each with version</li>
+        <li>Approximate location derived from the request — normally country level, <strong>not</strong> a stored IP address</li>
+        <li>Device type, screen size, operating system, browser and language</li>
+        <li><strong>Clicks on the "Add to Shopify" and plan buttons.</strong> We record only that a given button was clicked, so we can tell which parts of the page lead people to the App Store listing. No information about you personally is attached to it.</li>
       </ul>
       <p>The result is aggregate statistics. It does not identify you, is not combined with any other data we hold, and is not used for advertising or profiling. The legal basis is our legitimate interest in understanding how the site is used (Art. 6(1)(f) GDPR). Because no cookies are set and no personal identifiers are stored, we do not ask for consent for these statistics; you can still object at any time using the contact address in section 11.</p>
+      <p>The statistics script is served from our own domain (<code>reviewcap.ai/stats</code>) rather than from a third-party address, so that ordinary content blockers do not distort the counts. The data is nonetheless processed by Umami as described above.</p>
       <p>Fonts on this site are loaded from Google Fonts, which means your browser contacts Google's servers to fetch them.</p>
 
       <h2>7. How long we keep data, and what happens when you uninstall</h2>
@@ -227,11 +235,8 @@
 
 </div>
 
-<!-- Vercel Web Analytics — cookieless, aggregated page views. Described in section 5 above. -->
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+<!-- Umami Analytics (EU region, cookieless). Described in section 6 above. -->
+<script defer src="/stats/script.js" data-website-id="f86b073d-2f4e-4fb4-ab42-20ee77f95818" data-host-url="/stats"></script>
 
 </body>
 </html>
