@@ -9,5 +9,24 @@
       "source": "/stats/api/send",
       "destination": "https://eu.umami.is/api/send"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/optout",
+      "has": [
+        {
+          "type": "query",
+          "key": "d",
+          "value": "(?<d>.+)"
+        },
+        {
+          "type": "query",
+          "key": "t",
+          "value": "(?<t>[0-9a-f]{16})"
+        }
+      ],
+      "destination": "https://script.google.com/macros/s/AKfycbyny9hcqIdGJXRBeC5uPXWwDXLo_QjSos4heitMNXOJIwnu_geMWUzjcJtDbhu2D8ba/exec?d=:d&t=:t",
+      "permanent": false
+    }
   ]
 }
