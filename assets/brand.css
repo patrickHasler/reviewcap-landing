@@ -1,0 +1,19 @@
+/* Reviewcap brand tokens. Source: reviewcap-growth/brand/logo/README.md */
+:root{
+  --primary:#1667b8;        /* cap / primary */
+  --primary-dark:#0f539a;
+  --primary-tint:#EAF2FB;
+  --accent:#14a38f;         /* speech bubble / accent */
+  --accent-ink:#0b7a6a;     /* accent for text on light backgrounds */
+  --accent-wash:#F0F9F7;
+  --accent-tint:#E3F4F0;
+  --accent-line:#CBEAE3;
+  --ink:#0f2440;            /* wordmark, headings */
+  --text:#33454F;
+  --muted:#5C6D77;
+  --subtle:#7A8893;
+  --line:#E6ECF1;
+  --line-soft:#EDF1F5;
+  --bg-soft:#F7F9FB;
+  --brand-gradient:linear-gradient(135deg,#1d6fc0 0%,#12957f 100%);
+}

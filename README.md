@@ -21,4 +21,5 @@ Once the repo is cloned locally, Claude Code can edit `index.html` directly like
 
 ## Notes
 - All animation/interaction (FAQ accordion, hero "Customers say" demo) is now plain vanilla JS at the bottom of `index.html` — no external dependencies besides the Google Fonts link.
-- Colors: primary blue `#185FA5`, green accent `#0F6E56`, text `#33454F`/`#11212E`. Fonts: Plus Jakarta Sans (headings), Manrope (body).
+- Colors live in `assets/brand.css` as CSS variables (`--primary`, `--accent`, `--ink`, …) and are used by every page; change the palette there. Values come from `brand/logo/README.md` in the reviewcap-growth repo. Fonts: Plus Jakarta Sans (headings), Manrope (body).
+- Logo, favicon and touch icon are in `assets/`. `og-image.png` is rendered from `marketing/og-image/` in the reviewcap-growth repo.

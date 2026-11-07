@@ -16,14 +16,16 @@
 <meta name="twitter:title" content="Reviewcap — Turn your reviews into more sales">
 <meta name="twitter:description" content='Reviewcap turns every product review into a clear "Customers say" summary — so shoppers get answers in seconds and buy with confidence.'>
 <meta name="twitter:image" content="https://reviewcap.ai/og-image.png">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwxMCkiPgogICAgPHBhdGggZD0iTTExIDMwIEMxMSAxNCAyMiA5IDMzIDkgQzQ1IDkgNDkgMTkgNDkgMzAgWiIgZmlsbD0iIzBGNkU1NiIvPgogICAgPHJlY3QgeD0iMTAiIHk9IjI4LjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjMEE0QjM5Ii8+CiAgICA8cGF0aCBkPSJNNDQgMzEuNSBDNTQgMzEuNSA2MiAzMy41IDYzIDM2LjUgQzYyLjIgMzggNTYgMzcgNDguNSAzNS44IEM0NSAzNS4yIDQ0IDMzLjUgNDQgMzEuNSBaIiBmaWxsPSIjMEE0QjM5Ii8+CiAgICA8Y2lyY2xlIGN4PSIzMyIgY3k9IjkiIHI9IjIuNiIgZmlsbD0iIzBBNEIzOSIvPgogIDwvZz4KPC9zdmc+Cg==">
+<link rel="icon" type="image/svg+xml" href="/assets/reviewcap-favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/brand.css">
 <style>
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{margin:0;font-family:'Manrope',sans-serif;color:#33454F;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  body{margin:0;font-family:'Manrope',sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
   a{color:inherit;}
 </style>
 </head>
@@ -32,39 +34,33 @@
 <div style="background:#fff;overflow:hidden;">
 
   <!-- NAV -->
-  <nav style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.82);backdrop-filter:blur(12px);border-bottom:1px solid #EDF1F5;">
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);">
     <div style="max-width:1140px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
       <div style="display:flex;align-items:center;gap:10px;">
-        <svg width="34" height="24" viewBox="0 0 64 44" fill="none" style="display:block;flex:none;">
-          <path d="M11 30 C11 14 22 9 33 9 C45 9 49 19 49 30 Z" fill="#0F6E56"/>
-          <rect x="10" y="28.5" width="40" height="3" rx="1.5" fill="#0A4B39"/>
-          <path d="M44 31.5 C54 31.5 62 33.5 63 36.5 C62.2 38 56 37 48.5 35.8 C45 35.2 44 33.5 44 31.5 Z" fill="#0A4B39"/>
-          <circle cx="33" cy="9" r="2.6" fill="#0A4B39"/>
-        </svg>
-        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:19px;color:#13222E;letter-spacing:-0.02em;">Reviewcap</span>
+        <img src="/assets/reviewcap-logo-horizontal-color.svg" alt="Reviewcap" width="154" height="27" style="display:block;height:27px;width:auto;">
       </div>
-      <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-nav" style="display:inline-flex;align-items:center;gap:8px;background:#185FA5;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:10px 18px;border-radius:10px;text-decoration:none;box-shadow:0 4px 14px rgba(24,95,165,0.22);">Add to Shopify</a>
+      <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-nav" style="display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:10px 18px;border-radius:10px;text-decoration:none;box-shadow:0 4px 14px rgba(22,103,184,0.22);">Add to Shopify</a>
     </div>
   </nav>
 
   <!-- 1. HERO -->
-  <header id="install" style="padding:clamp(24px,3vw,40px) 22px clamp(52px,7vw,80px);overflow:hidden;background:#fff;">
+  <header id="install" style="padding:clamp(24px,3vw,40px) 22px clamp(52px,7vw,80px);overflow:hidden;background:radial-gradient(900px 480px at 88% 0%,var(--primary-tint) 0%,rgba(234,242,251,0) 70%),radial-gradient(700px 420px at 100% 85%,var(--accent-wash) 0%,rgba(240,249,247,0) 70%),#fff;">
     <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(44px,6vw,80px);align-items:center;">
 
       <div>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:26px;">
           <div style="display:inline-flex;align-items:center;gap:7px;background:#F4F5F6;border:1px solid #E5E7EB;padding:7px 14px;border-radius:999px;">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="15" height="15" style="flex:none;" aria-hidden="true"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></svg>
-            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13px;color:#13222E;">5.0</span>
-            <span style="font-size:13px;color:#7A8893;font-weight:500;">Shopify reviews app</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13px;color:var(--ink);">5.0</span>
+            <span style="font-size:13px;color:var(--subtle);font-weight:500;">Shopify reviews app</span>
           </div>
         </div>
-        <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(38px,4.2vw,56px);line-height:1.05;letter-spacing:-0.035em;color:#11212E;margin:0 0 20px;text-wrap:balance;">Turn your reviews into more sales</h1>
-        <p style="font-size:clamp(16px,1.8vw,19px);line-height:1.6;color:#54656F;margin:0 0 32px;text-wrap:pretty;">Reviewcap turns every product review into a clear <span style="color:#0F6E56;font-weight:700;">"Customers say"</span> summary — so shoppers get answers in seconds and buy with confidence.</p>
+        <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(38px,4.2vw,56px);line-height:1.05;letter-spacing:-0.035em;color:var(--ink);margin:0 0 20px;text-wrap:balance;">Turn your reviews into more sales</h1>
+        <p style="font-size:clamp(16px,1.8vw,19px);line-height:1.6;color:var(--muted);margin:0 0 32px;text-wrap:pretty;">Reviewcap turns every product review into a clear <span style="color:var(--accent-ink);font-weight:700;">"Customers say"</span> summary — so shoppers get answers in seconds and buy with confidence.</p>
         <div style="margin-bottom:22px;">
-          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-hero" style="display:block;text-align:center;background:#185FA5;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;padding:15px 26px;border-radius:13px;text-decoration:none;box-shadow:0 8px 24px rgba(24,95,165,0.26);">Add to Shopify — 14-day free trial</a>
+          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-hero" style="display:block;text-align:center;background:var(--primary);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;padding:15px 26px;border-radius:13px;text-decoration:none;box-shadow:0 8px 24px rgba(22,103,184,0.26);">Add to Shopify — 14-day free trial</a>
         </div>
-        <div style="font-size:13px;color:#7A8893;font-weight:500;display:flex;flex-wrap:wrap;gap:5px 14px;">
+        <div style="font-size:13px;color:var(--subtle);font-weight:500;display:flex;flex-wrap:wrap;gap:5px 14px;">
           <span>14-day free trial</span><span style="color:#CBD5DD;">·</span><span>5-minute setup</span><span style="color:#CBD5DD;">·</span><span>No code</span><span style="color:#CBD5DD;">·</span><span>Works with any theme</span>
         </div>
       </div>
@@ -89,17 +85,17 @@
               <svg width="58" height="58" viewBox="0 0 360 320" style="display:block;"><ellipse cx="150" cy="258" rx="120" ry="13" fill="#00000010"/><rect x="232" y="118" width="124" height="22" rx="11" transform="rotate(-15 232 129)" fill="#8A6A4A"/><rect x="232" y="118" width="124" height="8" rx="4" transform="rotate(-15 232 129)" fill="#9C7B58"/><path d="M55,140 C55,140 61,232 73,247 Q81,256 96,256 L204,256 Q219,256 227,247 C239,232 245,140 245,140 Z" fill="#C5CAD0"/><path d="M55,140 C55,140 61,232 73,247 Q81,256 96,256 L110,256 C100,238 92,180 90,140 Z" fill="#D3D8DD"/><ellipse cx="150" cy="140" rx="95" ry="20" fill="#D8DCE1"/><ellipse cx="150" cy="140" rx="80" ry="15" fill="#AEB4BB"/></svg>
             </div>
             <div style="flex:1;min-width:0;">
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#185FA5;margin-bottom:3px;">Hokura</div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:#11212E;line-height:1.2;margin-bottom:5px;">Enamel Cast-Iron Saucepan 18cm</div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:3px;">Hokura</div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:var(--ink);line-height:1.2;margin-bottom:5px;">Enamel Cast-Iron Saucepan 18cm</div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <div style="display:flex;align-items:center;gap:5px;">
                   <span style="color:#F2A93B;font-size:12px;">★★★★★</span>
-                  <span style="font-size:12px;color:#5C6D77;font-weight:700;">4.9</span>
+                  <span style="font-size:12px;color:var(--muted);font-weight:700;">4.9</span>
                   <span style="font-size:12px;color:#94A1AB;">· 187 reviews</span>
                 </div>
-                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:#11212E;">€149,00</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:var(--ink);">€149,00</span>
                 <div style="display:flex;gap:5px;">
-                  <span style="width:16px;height:16px;border-radius:4px;background:#C5CAD0;border:2px solid #185FA5;display:block;"></span>
+                  <span style="width:16px;height:16px;border-radius:4px;background:#C5CAD0;border:2px solid var(--primary);display:block;"></span>
                   <span style="width:16px;height:16px;border-radius:4px;background:#ECEDEA;border:1px solid #DDE4EA;display:block;"></span>
                   <span style="width:16px;height:16px;border-radius:4px;background:#2B2E33;display:block;"></span>
                 </div>
@@ -108,51 +104,44 @@
           </div>
 
           <div style="padding:14px 18px 18px;">
-            <div style="background:#F1F7F4;border:2px solid #0F6E56;border-radius:14px;padding:16px 18px;">
+            <div style="background:var(--accent-wash);border:2px solid var(--accent);border-radius:14px;padding:16px 18px;">
               <div style="display:grid;">
 
                 <div id="revState" style="grid-area:1/1;transition:opacity .55s ease, filter .55s ease, transform .55s ease;">
                   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13.5px;color:#13222E;">Customer reviews</span>
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13.5px;color:var(--ink);">Customer reviews</span>
                     <span style="font-size:10.5px;color:#7E9089;font-weight:700;">187 total · newest first</span>
                   </div>
                   <div style="columns:130px 3;column-gap:7px;">
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">A</span><span style="font-size:10px;font-weight:700;color:#13222E;">Anna R.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Heats so evenly my sauces never scorch.</div></div>
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">M</span><span style="font-size:10px;font-weight:700;color:#13222E;">Marco B.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Lighter than expected for cast iron.</div></div>
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">P</span><span style="font-size:10px;font-weight:700;color:#13222E;">Priya N.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★☆</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Cleans up in seconds after curry.</div></div>
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">L</span><span style="font-size:10px;font-weight:700;color:#13222E;">Lukas H.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Handle stays cool on stovetop.</div></div>
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">S</span><span style="font-size:10px;font-weight:700;color:#13222E;">Sofia M.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Five years in, looks brand new.</div></div>
-                    <div style="background:#fff;border:1px solid #DCEAE3;border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:#E3EFEA;color:#0F6E56;font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">T</span><span style="font-size:10px;font-weight:700;color:#13222E;">Tom W.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:#5C6D77;">Perfect size for one or two.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">A</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Anna R.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Heats so evenly my sauces never scorch.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">M</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Marco B.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Lighter than expected for cast iron.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">P</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Priya N.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★☆</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Cleans up in seconds after curry.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">L</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Lukas H.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Handle stays cool on stovetop.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">S</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Sofia M.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Five years in, looks brand new.</div></div>
+                    <div style="background:#fff;border:1px solid var(--accent-line);border-radius:8px;padding:7px 9px;margin-bottom:7px;break-inside:avoid;"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;"><span style="width:15px;height:15px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-size:7px;font-weight:800;display:flex;align-items:center;justify-content:center;">T</span><span style="font-size:10px;font-weight:700;color:var(--ink);">Tom W.</span><span style="color:#F2A93B;font-size:8px;margin-left:auto;">★★★★★</span></div><div style="font-size:10px;line-height:1.4;color:var(--muted);">Perfect size for one or two.</div></div>
                   </div>
                 </div>
 
                 <div id="sumState" style="grid-area:1/1;transition:opacity .55s ease, transform .55s ease;opacity:0;transform:translateY(8px);pointer-events:none;">
                   <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
                     <div style="display:flex;align-items:center;gap:7px;">
-                      <span style="color:#0F6E56;font-size:13px;">✦</span>
-                      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14.5px;color:#0F6E56;">Customers say</span>
+                      <span style="color:var(--accent-ink);font-size:13px;">✦</span>
+                      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14.5px;color:var(--accent-ink);">Customers say</span>
                     </div>
-                    <span style="display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid #D7E8E0;border-radius:999px;padding:4px 9px;font-size:10.5px;font-weight:700;color:#0F6E56;">
-                      <svg width="13" height="9" viewBox="0 0 64 44" fill="none" style="display:block;flex:none;"><path d="M11 30 C11 14 22 9 33 9 C45 9 49 19 49 30 Z" fill="#0F6E56"/><rect x="10" y="28.5" width="40" height="3" rx="1.5" fill="#0A4B39"/><path d="M44 31.5 C54 31.5 62 33.5 63 36.5 C62.2 38 56 37 48.5 35.8 C45 35.2 44 33.5 44 31.5 Z" fill="#0A4B39"/><circle cx="33" cy="9" r="2.6" fill="#0A4B39"/></svg>
+                    <span style="display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid var(--accent-line);border-radius:999px;padding:4px 9px;font-size:10.5px;font-weight:700;color:var(--accent-ink);">
+                      <svg width="13" height="11.6" viewBox="7 7.9 58 51.6" style="display:block;flex:none;" aria-hidden="true"><path fill="var(--primary)" fill-rule="evenodd" d="M9 39.5C9 25 19 15.5 32 15.5S55 25 55 39.5ZM20 26H39a2 2 0 0 1 0 4H20a2 2 0 0 1 0-4ZM20 33H31a2 2 0 0 1 0 4H20a2 2 0 0 1 0-4Z"/><path fill="var(--accent)" d="M13 41H58.5a4.5 4.5 0 0 1 0 9H24L13.5 57.5 15.5 50a4.5 4.5 0 0 1-2.5-9Z"/><circle fill="var(--primary)" cx="32" cy="12.6" r="2.7"/></svg>
                       by Reviewcap
                     </span>
                   </div>
                   <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:30px;color:#13222E;line-height:1;">4.9</span>
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:30px;color:var(--ink);line-height:1;">4.9</span>
                     <div>
                       <div style="color:#F2A93B;font-size:13px;letter-spacing:1px;">★★★★★</div>
-                      <div style="font-size:11px;color:#5C6D77;font-weight:600;margin-top:2px;">based on 187 reviews</div>
+                      <div style="font-size:11px;color:var(--muted);font-weight:600;margin-top:2px;">based on 187 reviews</div>
                     </div>
                   </div>
-                  <p id="demoSummary" style="margin:0 0 12px;font-size:13.5px;line-height:1.6;color:#2B3D47;min-height:4.8em;"></p>
-                  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;">
-                    <span class="dchip" data-i="1" style="opacity:0;transition:opacity .34s ease, transform .34s cubic-bezier(.34,1.56,.64,1);transform:translateY(7px) scale(.92);background:#fff;border:1px solid #D7E8E0;color:#0F6E56;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Heats evenly · 41</span>
-                    <span class="dchip" data-i="2" style="opacity:0;transition:opacity .34s ease, transform .34s cubic-bezier(.34,1.56,.64,1);transform:translateY(7px) scale(.92);background:#fff;border:1px solid #D7E8E0;color:#0F6E56;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Easy to clean · 33</span>
-                    <span class="dchip" data-i="3" style="opacity:0;transition:opacity .34s ease, transform .34s cubic-bezier(.34,1.56,.64,1);transform:translateY(7px) scale(.92);background:#fff;border:1px solid #D7E8E0;color:#0F6E56;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Surprisingly light · 27</span>
-                    <span class="dchip" data-i="4" style="opacity:0;transition:opacity .34s ease, transform .34s cubic-bezier(.34,1.56,.64,1);transform:translateY(7px) scale(.92);background:#fff;border:1px solid #D7E8E0;color:#0F6E56;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Handle stays cool · 22</span>
-                    <span class="dchip" data-i="5" style="opacity:0;transition:opacity .34s ease, transform .34s cubic-bezier(.34,1.56,.64,1);transform:translateY(7px) scale(.92);background:#fff;border:1px solid #D7E8E0;color:#0F6E56;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Built to last · 19</span>
-                  </div>
-                  <div style="border-top:1px solid #D7E8E0;padding-top:10px;font-size:11px;color:#7E9089;font-weight:600;">Summarized from 187 verified reviews · refreshes automatically</div>
+                  <p id="demoSummary" style="margin:0 0 12px;font-size:13.5px;line-height:1.6;color:var(--text);min-height:4.8em;"></p>
+                  <div style="border-top:1px solid var(--accent-line);padding-top:10px;font-size:11px;color:#7E9089;font-weight:600;">Summarized from 187 customer reviews · refreshed weekly or monthly</div>
                 </div>
 
               </div>
@@ -166,11 +155,11 @@
   </header>
 
   <!-- 2. TESTIMONIAL -->
-  <section style="background:#F7F9FB;padding:clamp(64px,9vw,112px) 22px;border-top:1px solid #EDF1F5;border-bottom:1px solid #EDF1F5;">
+  <section style="background:var(--bg-soft);padding:clamp(64px,9vw,112px) 22px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);">
     <div style="max-width:760px;margin:0 auto;position:relative;">
-      <button id="testiPrev" aria-label="Previous review" style="display:none;position:absolute;top:50%;left:clamp(-8px,-3vw,-20px);transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid #E6ECF1;box-shadow:0 6px 16px rgba(20,50,75,0.12);cursor:pointer;font-size:16px;color:#33454F;z-index:2;">‹</button>
-      <button id="testiNext" aria-label="Next review" style="display:none;position:absolute;top:50%;right:clamp(-8px,-3vw,-20px);transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid #E6ECF1;box-shadow:0 6px 16px rgba(20,50,75,0.12);cursor:pointer;font-size:16px;color:#33454F;z-index:2;">›</button>
-      <div id="testimonialCard" style="text-align:center;background:#fff;border:1px solid #E6ECF1;border-radius:24px;box-shadow:0 24px 60px -32px rgba(20,50,75,0.18);padding:clamp(36px,5vw,56px) clamp(24px,5vw,56px);"></div>
+      <button id="testiPrev" aria-label="Previous review" style="display:none;position:absolute;top:50%;left:clamp(-8px,-3vw,-20px);transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 6px 16px rgba(20,50,75,0.12);cursor:pointer;font-size:16px;color:var(--text);z-index:2;">‹</button>
+      <button id="testiNext" aria-label="Next review" style="display:none;position:absolute;top:50%;right:clamp(-8px,-3vw,-20px);transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 6px 16px rgba(20,50,75,0.12);cursor:pointer;font-size:16px;color:var(--text);z-index:2;">›</button>
+      <div id="testimonialCard" style="text-align:center;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 60px -32px rgba(20,50,75,0.18);padding:clamp(36px,5vw,56px) clamp(24px,5vw,56px);"></div>
       <div id="testimonialDots" style="display:flex;justify-content:center;gap:8px;margin-top:24px;"></div>
     </div>
   </section>
@@ -179,97 +168,97 @@
   <section id="how" style="padding:clamp(60px,8vw,104px) 22px;">
     <div style="max-width:1080px;margin:0 auto;">
       <div style="text-align:center;max-width:620px;margin:0 auto 52px;">
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:#185FA5;margin-bottom:14px;">How it works</div>
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:#11212E;margin:0;text-wrap:balance;">Live on your store in five minutes</h2>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--primary);margin-bottom:14px;">How it works</div>
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:var(--ink);margin:0;text-wrap:balance;">Live on your store in five minutes</h2>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
         <div style="padding:6px;">
-          <div style="width:44px;height:44px;border-radius:12px;background:#EAF2FA;color:#185FA5;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">1</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 9px;letter-spacing:-0.02em;">Install in one click</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">Add Reviewcap from the Shopify App Store. No theme code, no developers, no waiting.</p>
+          <div style="width:44px;height:44px;border-radius:12px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">1</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 9px;letter-spacing:-0.02em;">Install in one click</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">Add Reviewcap from the Shopify App Store. No theme code, no developers, no waiting.</p>
         </div>
         <div style="padding:6px;">
-          <div style="width:44px;height:44px;border-radius:12px;background:#EAF2FA;color:#185FA5;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">2</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 9px;letter-spacing:-0.02em;">We read every review</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">Reviewcap analyzes the reviews you already have and pulls out what shoppers actually care about.</p>
+          <div style="width:44px;height:44px;border-radius:12px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">2</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 9px;letter-spacing:-0.02em;">We read every review</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">Reviewcap analyzes the reviews you already have and pulls out what shoppers actually care about.</p>
         </div>
         <div style="padding:6px;">
-          <div style="width:44px;height:44px;border-radius:12px;background:#E9F4EF;color:#0F6E56;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">3</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 9px;letter-spacing:-0.02em;">Shoppers buy sooner</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">A clean "Customers say" summary appears on every product page, answering doubts before they're asked.</p>
+          <div style="width:44px;height:44px;border-radius:12px;background:var(--accent-tint);color:var(--accent-ink);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:18px;">3</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 9px;letter-spacing:-0.02em;">Shoppers buy sooner</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">A clean "Customers say" summary appears on every product page, answering doubts before they're asked.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 4. BENEFIT CARDS -->
-  <section style="background:#F7F9FB;padding:clamp(60px,8vw,104px) 22px;border-top:1px solid #EDF1F5;">
+  <section style="background:var(--bg-soft);padding:clamp(60px,8vw,104px) 22px;border-top:1px solid var(--line-soft);">
     <div style="max-width:1080px;margin:0 auto;">
       <div style="text-align:center;max-width:640px;margin:0 auto 52px;">
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:#11212E;margin:0 0 16px;text-wrap:balance;">Built to move your numbers</h2>
-        <p style="margin:0;font-size:17px;line-height:1.55;color:#5C6D77;">Reviews are your most persuasive asset. Reviewcap makes them work harder on every page.</p>
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:var(--ink);margin:0 0 16px;text-wrap:balance;">Built to move your numbers</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:var(--muted);">Reviews are your most persuasive asset. Reviewcap makes them work harder on every page.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;">
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:18px;padding:30px 26px;">
-          <div style="width:46px;height:46px;border-radius:13px;background:#185FA5;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:20px;">↑</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 10px;letter-spacing:-0.02em;">More add-to-carts</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">Shoppers get the verdict in seconds instead of scrolling 200 reviews. Less hesitation, more checkouts.</p>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;">
+          <div style="width:46px;height:46px;border-radius:13px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:20px;">↑</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 10px;letter-spacing:-0.02em;">More add-to-carts</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">Shoppers get the verdict in seconds instead of scrolling 200 reviews. Less hesitation, more checkouts.</p>
         </div>
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:18px;padding:30px 26px;">
-          <div style="width:46px;height:46px;border-radius:13px;background:#0F6E56;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:20px;">✓</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 10px;letter-spacing:-0.02em;">Fewer returns</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">Honest summaries set the right expectations on fit, size and quality — so what arrives is what they pictured.</p>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;">
+          <div style="width:46px;height:46px;border-radius:13px;background:var(--accent-ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:20px;">✓</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 10px;letter-spacing:-0.02em;">Fewer returns</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">Honest summaries set the right expectations on fit, size and quality — so what arrives is what they pictured.</p>
         </div>
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:18px;padding:30px 26px;">
-          <div style="width:46px;height:46px;border-radius:13px;background:#185FA5;color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:700;margin-bottom:20px;">↻</div>
-          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:#13222E;margin:0 0 10px;letter-spacing:-0.02em;">Hours back each week</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.6;color:#5C6D77;">Stop reading reviews to spot trends by hand. Summaries refresh on their own as new reviews land.</p>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;">
+          <div style="width:46px;height:46px;border-radius:13px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:700;margin-bottom:20px;">↻</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 10px;letter-spacing:-0.02em;">Hours back each week</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.6;color:var(--muted);">Stop reading reviews to spot trends by hand. Summaries refresh on their own as new reviews land.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 6. PRICING -->
-  <section id="pricing" style="background:#F7F9FB;padding:clamp(60px,8vw,104px) 22px;border-top:1px solid #EDF1F5;">
+  <section id="pricing" style="background:var(--bg-soft);padding:clamp(60px,8vw,104px) 22px;border-top:1px solid var(--line-soft);">
     <div style="max-width:1080px;margin:0 auto;">
       <div style="text-align:center;max-width:620px;margin:0 auto 48px;">
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:#11212E;margin:0 0 14px;text-wrap:balance;">Every plan includes every feature</h2>
-        <p style="margin:0;font-size:17px;line-height:1.55;color:#5C6D77;">You only pay based on the size of your store. Start with a 14-day free trial, cancel anytime.</p>
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:var(--ink);margin:0 0 14px;text-wrap:balance;">Every plan includes every feature</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:var(--muted);">You only pay based on the size of your store. Start with a 14-day free trial, cancel anytime.</p>
       </div>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;align-items:stretch;margin-bottom:22px;">
 
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
-          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:#7A8893;margin-bottom:4px;">Starter</div>
-          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#11212E;letter-spacing:-0.03em;">$9</span><span style="font-size:14px;color:#7A8893;font-weight:600;">/ month</span></div>
-          <div style="font-size:14px;line-height:1.5;color:#5C6D77;font-weight:500;margin-bottom:24px;flex:1;">Up to 1,000 reviews in your store</div>
-          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-starter" style="display:block;text-align:center;background:#185FA5;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:var(--subtle);margin-bottom:4px;">Starter</div>
+          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:var(--ink);letter-spacing:-0.03em;">$9</span><span style="font-size:14px;color:var(--subtle);font-weight:600;">/ month</span></div>
+          <div style="font-size:14px;line-height:1.5;color:var(--muted);font-weight:500;margin-bottom:24px;flex:1;">Up to 1,000 reviews in your store</div>
+          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-starter" style="display:block;text-align:center;background:var(--primary);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
         </div>
 
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
-          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:#7A8893;margin-bottom:4px;">Growth</div>
-          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#11212E;letter-spacing:-0.03em;">$29</span><span style="font-size:14px;color:#7A8893;font-weight:600;">/ month</span></div>
-          <div style="font-size:14px;line-height:1.5;color:#5C6D77;font-weight:500;margin-bottom:24px;flex:1;">Up to 10,000 reviews in your store</div>
-          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-growth" style="display:block;text-align:center;background:#185FA5;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:var(--subtle);margin-bottom:4px;">Growth</div>
+          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:var(--ink);letter-spacing:-0.03em;">$29</span><span style="font-size:14px;color:var(--subtle);font-weight:600;">/ month</span></div>
+          <div style="font-size:14px;line-height:1.5;color:var(--muted);font-weight:500;margin-bottom:24px;flex:1;">Up to 10,000 reviews in your store</div>
+          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-growth" style="display:block;text-align:center;background:var(--primary);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
         </div>
 
-        <div style="background:#fff;border:1px solid #E6ECF1;border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
-          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:#7A8893;margin-bottom:4px;">Scale</div>
-          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#11212E;letter-spacing:-0.03em;">$49</span><span style="font-size:14px;color:#7A8893;font-weight:600;">/ month</span></div>
-          <div style="font-size:14px;line-height:1.5;color:#5C6D77;font-weight:500;margin-bottom:24px;flex:1;">Unlimited reviews (fair use)</div>
-          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-scale" style="display:block;text-align:center;background:#185FA5;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px 24px;display:flex;flex-direction:column;">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:var(--subtle);margin-bottom:4px;">Scale</div>
+          <div style="display:flex;align-items:baseline;gap:5px;margin-bottom:8px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:var(--ink);letter-spacing:-0.03em;">$49</span><span style="font-size:14px;color:var(--subtle);font-weight:600;">/ month</span></div>
+          <div style="font-size:14px;line-height:1.5;color:var(--muted);font-weight:500;margin-bottom:24px;flex:1;">Unlimited reviews (fair use)</div>
+          <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="plan-scale" style="display:block;text-align:center;background:var(--primary);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:11px;text-decoration:none;">Start free trial</a>
         </div>
 
       </div>
 
-      <div style="background:#fff;border:1px solid #E6ECF1;border-radius:20px;padding:26px 28px;">
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;color:#13222E;margin-bottom:16px;">Included in every plan</div>
+      <div style="background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;color:var(--ink);margin-bottom:16px;">Included in every plan</div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px 26px;">
-            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:#3C4D57;"><span style="color:#0F6E56;font-weight:800;flex:none;">✓</span>Automatic AI review summaries</div>
-            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:#3C4D57;"><span style="color:#0F6E56;font-weight:800;flex:none;">✓</span>Displayed on your product pages</div>
-            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:#3C4D57;"><span style="color:#0F6E56;font-weight:800;flex:none;">✓</span>Summarize reviews in any language</div>
-            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:#3C4D57;"><span style="color:#0F6E56;font-weight:800;flex:none;">✓</span>Summaries refreshed weekly</div>
-            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:#3C4D57;"><span style="color:#0F6E56;font-weight:800;flex:none;">✓</span>14-day free trial</div>
+            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:var(--text);"><span style="color:var(--accent-ink);font-weight:800;flex:none;">✓</span>Automatic AI review summaries</div>
+            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:var(--text);"><span style="color:var(--accent-ink);font-weight:800;flex:none;">✓</span>Displayed on your product pages</div>
+            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:var(--text);"><span style="color:var(--accent-ink);font-weight:800;flex:none;">✓</span>Summarize reviews in any language</div>
+            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:var(--text);"><span style="color:var(--accent-ink);font-weight:800;flex:none;">✓</span>Summaries refreshed weekly or monthly</div>
+            <div style="display:flex;gap:9px;font-size:14px;line-height:1.5;color:var(--text);"><span style="color:var(--accent-ink);font-weight:800;flex:none;">✓</span>14-day free trial</div>
         </div>
       </div>
     </div>
@@ -278,39 +267,33 @@
   <!-- 7. FAQ -->
   <section id="faq" style="padding:clamp(60px,8vw,104px) 22px;">
     <div style="max-width:740px;margin:0 auto;">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:#11212E;margin:0 0 40px;text-align:center;">Questions, answered</h2>
-      <div id="faqList" style="border-top:1px solid #E6ECF1;"></div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);line-height:1.1;letter-spacing:-0.03em;color:var(--ink);margin:0 0 40px;text-align:center;">Questions, answered</h2>
+      <div id="faqList" style="border-top:1px solid var(--line);"></div>
     </div>
   </section>
 
   <!-- 8. FINAL CTA -->
   <section style="padding:22px;">
-    <div style="max-width:1080px;margin:0 auto;background:#185FA5;border-radius:26px;padding:clamp(48px,7vw,80px) 28px;text-align:center;">
+    <div style="max-width:1080px;margin:0 auto;background:var(--brand-gradient);border-radius:26px;padding:clamp(48px,7vw,80px) 28px;text-align:center;">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.4vw,46px);line-height:1.1;letter-spacing:-0.03em;color:#fff;margin:0 0 18px;text-wrap:balance;">Turn your reviews into your best salesperson</h2>
-      <p style="margin:0 auto 32px;font-size:18px;line-height:1.55;color:#CFE0F0;max-width:520px;">Try Reviewcap free for 14 days and watch your product pages start selling for you.</p>
-      <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-bottom" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#185FA5;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:17px;padding:17px 32px;border-radius:13px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.18);">Add to Shopify — 14-day free trial</a>
-      <div style="margin-top:20px;font-size:13.5px;color:#AFCAE6;font-weight:600;">14-day free trial · 5-minute setup · No code required</div>
+      <p style="margin:0 auto 32px;font-size:18px;line-height:1.55;color:rgba(255,255,255,0.88);max-width:520px;">Try Reviewcap free for 14 days and watch your product pages start selling for you.</p>
+      <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-bottom" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--primary);font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:17px;padding:17px 32px;border-radius:13px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.18);">Add to Shopify — 14-day free trial</a>
+      <div style="margin-top:20px;font-size:13.5px;color:rgba(255,255,255,0.74);font-weight:600;">14-day free trial · 5-minute setup · No code required</div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer style="padding:36px 22px 48px;border-top:1px solid #EDF1F5;margin-top:40px;">
+  <footer style="padding:36px 22px 48px;border-top:1px solid var(--line-soft);margin-top:40px;">
     <div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
       <div style="display:flex;align-items:center;gap:9px;">
-        <svg width="28" height="20" viewBox="0 0 64 44" fill="none" style="display:block;flex:none;">
-          <path d="M11 30 C11 14 22 9 33 9 C45 9 49 19 49 30 Z" fill="#0F6E56"/>
-          <rect x="10" y="28.5" width="40" height="3" rx="1.5" fill="#0A4B39"/>
-          <path d="M44 31.5 C54 31.5 62 33.5 63 36.5 C62.2 38 56 37 48.5 35.8 C45 35.2 44 33.5 44 31.5 Z" fill="#0A4B39"/>
-          <circle cx="33" cy="9" r="2.6" fill="#0A4B39"/>
-        </svg>
-        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:#13222E;">Reviewcap</span>
+        <img src="/assets/reviewcap-logo-horizontal-color.svg" alt="Reviewcap" width="132" height="23" style="display:block;height:23px;width:auto;">
       </div>
-      <div style="display:flex;flex-wrap:wrap;gap:22px;font-size:13.5px;font-weight:600;color:#7A8893;">
+      <div style="display:flex;flex-wrap:wrap;gap:22px;font-size:13.5px;font-weight:600;color:var(--subtle);">
         <a href="#how" style="text-decoration:none;">How it works</a>
         <a href="#pricing" style="text-decoration:none;">Pricing</a>
         <a href="#faq" style="text-decoration:none;">FAQ</a>
         <a href="/privacy" style="text-decoration:none;">Privacy</a>
-        <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-footer" style="text-decoration:none;color:#185FA5;">Add to Shopify</a>
+        <a href="https://apps.shopify.com/reviewcap-ai" target="_blank" rel="noopener" data-umami-event="cta-footer" style="text-decoration:none;color:var(--primary);">Add to Shopify</a>
       </div>
       <div style="font-size:13px;color:#A2AEB7;font-weight:500;">© 2026 Reviewcap</div>
     </div>
@@ -331,7 +314,7 @@
     },
     {
       initials: 'L64', name: 'Latitude 64°', location: 'Sweden', date: 'August 22, 2025', badge: null,
-      quote: 'Easy to use, with great support from Liam. It helps our customers get a quick summary without having to read through all the reviews. Since Judge.me doesn’t offer this natively, it’s a great solution.'
+      quote: 'Easy to use, with great support from Liam. It helps our customers get a quick summary without having to read through all the reviews.'
     }
   ];
   var testiIndex = 0;
@@ -346,21 +329,21 @@
     testiCard.innerHTML =
       '<div style="display:inline-flex;align-items:center;gap:8px;background:#F4F5F6;border:1px solid #E5E7EB;padding:7px 14px;border-radius:999px;margin-bottom:22px;">' +
       '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="15" height="15" style="flex:none;" aria-hidden="true"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></svg>' +
-      '<span style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:13px;color:#13222E;">Shopify App Store</span>' +
-      '<span style="font-size:13px;color:#7A8893;font-weight:500;">· Verified merchant review</span>' +
+      '<span style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:13px;color:var(--ink);">Shopify App Store</span>' +
+      '<span style="font-size:13px;color:var(--subtle);font-weight:500;">· Verified merchant review</span>' +
       '</div>' +
       '<div style="color:#F2A93B;font-size:18px;letter-spacing:2px;margin-bottom:24px;">★★★★★</div>' +
-      '<blockquote style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:clamp(17px,2.2vw,22px);line-height:1.4;letter-spacing:-0.025em;color:#13222E;margin:0 0 32px;text-wrap:balance;">"' + t.quote + '"</blockquote>' +
+      '<blockquote style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:clamp(17px,2.2vw,22px);line-height:1.4;letter-spacing:-0.025em;color:var(--ink);margin:0 0 32px;text-wrap:balance;">"' + t.quote + '"</blockquote>' +
       '<div style="display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;">' +
-      '<div style="width:52px;height:52px;border-radius:50%;flex:none;background:linear-gradient(135deg,#E4EAF0 0%,#C8D5E0 100%);display:flex;align-items:center;justify-content:center;font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:15px;color:#7A8893;">' + t.initials + '</div>' +
+      '<div style="width:52px;height:52px;border-radius:50%;flex:none;background:linear-gradient(135deg,#E4EAF0 0%,#C8D5E0 100%);display:flex;align-items:center;justify-content:center;font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:15px;color:var(--subtle);">' + t.initials + '</div>' +
       '<div style="text-align:left;">' +
-      '<div style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:15.5px;color:#13222E;">' + t.name + '</div>' +
-      '<div style="font-size:13.5px;color:#7A8893;font-weight:600;">' + t.location + ' · ' + t.date + '</div>' +
+      '<div style="font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:15.5px;color:var(--ink);">' + t.name + '</div>' +
+      '<div style="font-size:13.5px;color:var(--subtle);font-weight:600;">' + t.location + ' · ' + t.date + '</div>' +
       '</div>' +
-      (t.badge ? '<div style="margin-left:8px;padding:8px 14px;border-radius:11px;background:#E9F4EF;color:#0F6E56;font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:14px;">' + t.badge + '</div>' : '') +
+      (t.badge ? '<div style="margin-left:8px;padding:8px 14px;border-radius:11px;background:var(--accent-tint);color:var(--accent-ink);font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:800;font-size:14px;">' + t.badge + '</div>' : '') +
       '</div>';
     testiDots.innerHTML = TESTIMONIALS.map(function (_, i) {
-      return '<button data-i="' + i + '" aria-label="Review ' + (i + 1) + '" style="width:' + (i === testiIndex ? '22px' : '8px') + ';height:8px;border-radius:999px;border:none;padding:0;cursor:pointer;background:' + (i === testiIndex ? '#185FA5' : '#D9E4EE') + ';transition:width .2s,background .2s;"></button>';
+      return '<button data-i="' + i + '" aria-label="Review ' + (i + 1) + '" style="width:' + (i === testiIndex ? '22px' : '8px') + ';height:8px;border-radius:999px;border:none;padding:0;cursor:pointer;background:' + (i === testiIndex ? 'var(--primary)' : '#D9E4EE') + ';transition:width .2s,background .2s;"></button>';
     }).join('');
     testiDots.querySelectorAll('button').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,20 +376,20 @@
     { q: 'Is there a free trial?', a: 'Yes. Every plan starts with a 14-day free trial. Cancel any time before it ends and you are not charged. After that you pick the plan that matches the number of reviews in your store — every plan includes every feature.' },
     { q: 'Will it slow down my store?', a: 'No. Summaries are pre-generated and loaded asynchronously, so the widget adds no meaningful weight to your page-load time.' },
     { q: 'Do I need to touch any code?', a: 'Never. Reviewcap installs as a Shopify app block, so you drop the "Customers say" widget onto any product page from the theme editor — works with every theme.' },
-    { q: 'Where do the summaries come from?', a: 'From the real reviews you already collect. Reviewcap connects to Shopify Product Reviews, Judge.me, Loox and more, then summarizes only genuine customer feedback — never invented details.' },
-    { q: 'Can I control what the summaries say?', a: 'Yes. You can edit any summary, pin or hide specific themes, set the tone, and lock a summary so it stops auto-updating whenever you want full control.' },
+    { q: 'Where do the summaries come from?', a: 'From the real reviews you already collect. Reviewcap connects to the review app you already use, including Judge.me, Loox, Yotpo, Okendo, Klaviyo Reviews and Trustpilot, and summarizes only genuine customer feedback. Using a review app that isn’t supported yet? Tell us and we’ll add it.' },
+    { q: 'Can I control what the summaries say?', a: 'Yes. Pick the length (2, 4 or 6 sentences) and the tone (balanced, or positive only), and give the AI your own instructions, like “Mention how it fits”. You see a live preview before anything goes on your store, and you choose whether summaries refresh weekly or monthly.' },
   ];
   var openFaq = 0;
   var faqList = document.getElementById('faqList');
   function renderFaqs() {
     faqList.innerHTML = FAQS.map(function (f, i) {
       var open = openFaq === i;
-      return '<div style="border-bottom:1px solid #E6ECF1;">' +
-        '<button data-i="' + i + '" style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 4px;text-align:left;font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:17.5px;color:#13222E;letter-spacing:-0.01em;">' +
+      return '<div style="border-bottom:1px solid var(--line);">' +
+        '<button data-i="' + i + '" style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 4px;text-align:left;font-family:\'Plus Jakarta Sans\',sans-serif;font-weight:700;font-size:17.5px;color:var(--ink);letter-spacing:-0.01em;">' +
         '<span>' + f.q + '</span>' +
-        '<span style="flex:none;width:26px;height:26px;border-radius:50%;background:#F1F5F8;color:#185FA5;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;">' + (open ? '\u2013' : '+') + '</span>' +
+        '<span style="flex:none;width:26px;height:26px;border-radius:50%;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;">' + (open ? '\u2013' : '+') + '</span>' +
         '</button>' +
-        (open ? '<p style="margin:0;padding:0 4px 24px;font-size:15.5px;line-height:1.65;color:#5C6D77;max-width:620px;">' + f.a + '</p>' : '') +
+        (open ? '<p style="margin:0;padding:0 4px 24px;font-size:15.5px;line-height:1.65;color:var(--muted);max-width:620px;">' + f.a + '</p>' : '') +
         '</div>';
     }).join('');
     faqList.querySelectorAll('button').forEach(function (btn) {
@@ -424,7 +407,6 @@
   var revState = document.getElementById('revState');
   var sumState = document.getElementById('sumState');
   var demoSummaryEl = document.getElementById('demoSummary');
-  var chips = Array.prototype.slice.call(document.querySelectorAll('.dchip'));
   var timers = [];
   function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
 
@@ -432,7 +414,6 @@
     revState.style.opacity = '1'; revState.style.filter = 'blur(0px)'; revState.style.transform = 'scale(1)'; revState.style.pointerEvents = 'auto';
     sumState.style.opacity = '0'; sumState.style.transform = 'translateY(8px)'; sumState.style.pointerEvents = 'none';
     demoSummaryEl.textContent = '';
-    chips.forEach(function (c) { c.style.opacity = '0'; c.style.transform = 'translateY(7px) scale(.92)'; });
     later(beginDemoSummary, 2900);
   }
   function beginDemoSummary() {
@@ -441,16 +422,9 @@
     later(function () { typeDemo(0); }, 700);
   }
   function typeDemo(i) {
-    if (i > DEMO_TEXT.length) { later(function () { popDemoChip(1); }, 300); return; }
+    if (i > DEMO_TEXT.length) { later(startDemo, 4400); return; }
     demoSummaryEl.textContent = DEMO_TEXT.slice(0, i) + (i < DEMO_TEXT.length ? '\u258C' : '');
     later(function () { typeDemo(i + 1); }, 17);
-  }
-  function popDemoChip(n) {
-    chips.forEach(function (c) {
-      if (parseInt(c.getAttribute('data-i'), 10) <= n) { c.style.opacity = '1'; c.style.transform = 'translateY(0) scale(1)'; }
-    });
-    if (n < 5) later(function () { popDemoChip(n + 1); }, 170);
-    else later(function () { startDemo(); }, 3600);
   }
   later(startDemo, 900);
 </script>

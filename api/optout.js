@@ -152,32 +152,29 @@ function page(title, body) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>${esc(title)} — Reviewcap</title>
+<link rel="icon" type="image/svg+xml" href="/assets/reviewcap-favicon.svg">
+<link rel="stylesheet" href="/assets/brand.css">
 <style>
   *{box-sizing:border-box;}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#33454F;background:#F7F9FB;-webkit-font-smoothing:antialiased;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg-soft);-webkit-font-smoothing:antialiased;}
   main{max-width:480px;margin:0 auto;padding:clamp(40px,10vh,96px) 16px;}
-  .card{background:#fff;border:1px solid #E6ECF1;border-radius:14px;padding:32px 28px;}
-  .brand{display:flex;align-items:center;gap:10px;margin-bottom:24px;font-weight:800;font-size:18px;color:#13222E;letter-spacing:-0.02em;}
-  h1{font-size:24px;line-height:1.25;letter-spacing:-0.02em;color:#11212E;margin:0 0 14px;}
-  p{font-size:16px;line-height:1.6;color:#4A5B66;margin:0 0 16px;}
-  strong{color:#13222E;word-break:break-all;}
-  .muted{font-size:14px;color:#7A8893;margin:16px 0 0;}
-  a{color:#185FA5;font-weight:600;}
-  button{font:inherit;font-weight:700;font-size:16px;color:#fff;background:#185FA5;border:0;border-radius:10px;padding:12px 22px;cursor:pointer;}
-  button:hover{background:#134F8A;}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 28px;}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:24px;font-weight:800;font-size:18px;color:var(--ink);letter-spacing:-0.02em;}
+  .brand img{display:block;height:24px;width:auto;}
+  h1{font-size:24px;line-height:1.25;letter-spacing:-0.02em;color:var(--ink);margin:0 0 14px;}
+  p{font-size:16px;line-height:1.6;color:var(--muted);margin:0 0 16px;}
+  strong{color:var(--ink);word-break:break-all;}
+  .muted{font-size:14px;color:var(--subtle);margin:16px 0 0;}
+  a{color:var(--primary);font-weight:600;}
+  button{font:inherit;font-weight:700;font-size:16px;color:#fff;background:var(--primary);border:0;border-radius:10px;padding:12px 22px;cursor:pointer;}
+  button:hover{background:var(--primary-dark);}
 </style>
 </head>
 <body>
 <main>
   <div class="card">
     <div class="brand">
-      <svg width="30" height="21" viewBox="0 0 64 44" fill="none" aria-hidden="true">
-        <path d="M11 30 C11 14 22 9 33 9 C45 9 49 19 49 30 Z" fill="#0F6E56"/>
-        <rect x="10" y="28.5" width="40" height="3" rx="1.5" fill="#0A4B39"/>
-        <path d="M44 31.5 C54 31.5 62 33.5 63 36.5 C62.2 38 56 37 48.5 35.8 C45 35.2 44 33.5 44 31.5 Z" fill="#0A4B39"/>
-        <circle cx="33" cy="9" r="2.6" fill="#0A4B39"/>
-      </svg>
-      Reviewcap
+      <img src="/assets/reviewcap-logo-horizontal-color.svg" alt="Reviewcap" width="137" height="24">
     </div>
     <h1>${esc(title)}</h1>
     ${body}
